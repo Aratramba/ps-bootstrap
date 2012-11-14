@@ -70,23 +70,23 @@ settings = {
     <tr>
         <td>width</td>
         <td>number</td>
-        <td>`1200`</td>
+        <td><code>1200</code></td>
     </tr>
     <tr>
         <td>height</td>
         <td>number</td>
-        <td>`1200`</td>
+        <td><code>1200</code></td>
     </tr>
     <tr>
         <td>guides</td>
         <td>object</td>
-        <td>`{ horizontal: [], vertical: [] }`</td>
+        <td><code>{ horizontal: [], vertical: [] }</code></td>
     </tr>
     <tr>
         <td>guides.horizontal</td>
         <td>array</td>
         <td>
-            `[100,200,300]`
+            <code>[100,200,300]</code>
 
             Calculations, variables are also possible. Numbers will be rounded off.
         </td>
@@ -95,7 +95,7 @@ settings = {
         <td>guides.vertical</td>
         <td>array</td>
         <td>
-            `[100,200,300]`
+            <code>[100,200,300]</code>
 
             Calculations, variables are also possible. Numbers will be rounded off.</td>
     </tr>
@@ -103,7 +103,7 @@ settings = {
         <td>layers</td>
         <td>array containing objects</td>
         <td>
-            `[{ name: 'layer 1' }]`
+            <code>[{ name: 'layer 1' }]</code>
 
             Layers can be nested. If a layer contains another layers array, a layergroup is created. Every layer must be an object. If not, an empty artlayer is created.
         </td>
@@ -111,7 +111,7 @@ settings = {
     <tr>
         <td>layer.name</td>
         <td>string</td>
-        <td>`layername`</td>
+        <td><code>layername</code></td>
     </tr>
 </tbody>
 </table>
