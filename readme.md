@@ -10,6 +10,10 @@ Mac OS: `Applications\Adobe Photoshop CS5\Presets\Scripts`
 
 If you have copied the .jsx file to the right directory, the script should appear in Photoshop under `file › scripts › bootstrap` when you have restarted it. It might be nice to create [a shortcut](http://help.adobe.com/en_US/photoshop/cs/using/WSfd1234e1c4b69f30ea53e41001031ab64-7448a.html#WSA72EC22F-E602-4fa7-B236-401CCDD3DF1Aa).
 
+## Example ##
+
+![](https://raw.github.com/EightMedia/ps-bootstrap/master/assets/layers-example.png)
+
 ## Usage ##
 
 Edit the settings object at the top of the bootstrap.jsx to meet your own needs. Default setup creates a document of 1200x1200, with guides that center 978px horizontally and one vertical guide at 100px. Also a couple of layergroups are created, namely HEADER, BODY, FOOTER, and an extra layergroup + layer for the logo.
