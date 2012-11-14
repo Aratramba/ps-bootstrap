@@ -8,7 +8,7 @@ copy `build/bootstrap.jsx` to your photoshop scripts folder:
 Windows: `C:\Program Files\Adobe\Adobe Photoshop CS5\Presets\Scripts`   
 Mac OS: `Applications\Adobe Photoshop CS5\Presets\Scripts`
 
-If you have copied the .jsx file to the right directory, the script should appear in Photoshop under `file › scripts › guides` when you have restarted it.
+If you have copied the .jsx file to the right directory, the script should appear in Photoshop under `file › scripts › guides` when you have restarted it. You might want to ([create a shortcut](http://help.adobe.com/en_US/photoshop/cs/using/WSfd1234e1c4b69f30ea53e41001031ab64-7448a.html#WSA72EC22F-E602-4fa7-B236-401CCDD3DF1Aa).
 
 ## Usage ##
 
@@ -62,9 +62,9 @@ settings = {
 
 <table>
 <thead>
-    <th>name</th>
-    <th>type</th>
-    <th>example</th>
+    <th align="left">name</th>
+    <th align="left">type</th>
+    <th align="left">example</th>
 </thead>
 <tbody>
     <tr>
@@ -85,22 +85,28 @@ settings = {
     <tr>
         <td>guides.horizontal</td>
         <td>array</td>
-        <td>[100,200,300]</td>
+        <td>
+            [100,200,300]
+
+            Calculations, variables are also possible. Numbers will be rounded off.
+        </td>
     </tr>
     <tr>
         <td>guides.vertical</td>
         <td>array</td>
-        <td>[100,200,300]</td>
+        <td>
+            [100,200,300]
+
+            Calculations, variables are also possible. Numbers will be rounded off.</td>
     </tr>
     <tr>
         <td>layers</td>
         <td>array containing objects</td>
-        <td>[{ name: 'layer 1' }]</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td>Layers can be nested. If a layer contains another layers array, a layergroup is created. Every layer must be an object</td>
+        <td>
+            [{ name: 'layer 1' }]
+
+            Layers can be nested. If a layer contains another layers array, a layergroup is created. Every layer must be an object. If not, an empty artlayer is created.
+        </td>
     </tr>
     <tr>
         <td>layer.name</td>
