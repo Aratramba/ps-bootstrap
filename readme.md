@@ -8,7 +8,7 @@ copy `build/bootstrap.jsx` to your photoshop scripts folder:
 Windows: `C:\Program Files\Adobe\Adobe Photoshop CS5\Presets\Scripts`   
 Mac OS: `Applications\Adobe Photoshop CS5\Presets\Scripts`
 
-If you have copied the .jsx file to the right directory, the script should appear in Photoshop under `file › scripts › guides` when you have restarted it. You might want to ([create a shortcut](http://help.adobe.com/en_US/photoshop/cs/using/WSfd1234e1c4b69f30ea53e41001031ab64-7448a.html#WSA72EC22F-E602-4fa7-B236-401CCDD3DF1Aa).
+If you have copied the .jsx file to the right directory, the script should appear in Photoshop under `file › scripts › guides` when you have restarted it. It might be nice to create [a shortcut](http://help.adobe.com/en_US/photoshop/cs/using/WSfd1234e1c4b69f30ea53e41001031ab64-7448a.html#WSA72EC22F-E602-4fa7-B236-401CCDD3DF1Aa).
 
 ## Usage ##
 
@@ -16,18 +16,29 @@ Edit the settings object at the top of the bootstrap.jsx to meet your own needs.
 
 ```javascript
 var height, margin, settings, width;
-
 width = 1200;
 height = 1200;
 margin = (width - 978) / 2;
 
 settings = {
+  /*
+    document setup
+  */
+
   width: width,
   height: height,
+  /*
+    guides
+  */
+
   guides: {
     horizontal: [100],
     vertical: [margin, width - margin]
   },
+  /*
+    layers
+  */
+
   layers: [
     {
       name: 'HEADER',
@@ -58,6 +69,7 @@ settings = {
   ]
 };
 
+
 ``` 
 
 <table>
@@ -86,18 +98,18 @@ settings = {
         <td>guides.horizontal</td>
         <td>array</td>
         <td>
-            <code>[100,200,300]</code>
+            <code>[100, 100*2, width / 2]</code>
 
-            Calculations, variables are also possible. Numbers will be rounded off.
+            Numbers will be rounded off.
         </td>
     </tr>
     <tr>
         <td>guides.vertical</td>
         <td>array</td>
         <td>
-            <code>[100,200,300]</code>
+            <code>[100, 100*2, height / 2]</code>
 
-            Calculations, variables are also possible. Numbers will be rounded off.</td>
+            Numbers will be rounded off.</td>
     </tr>
     <tr>
         <td>layers</td>
