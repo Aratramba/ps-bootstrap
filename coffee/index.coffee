@@ -1,0 +1,1 @@
+dialog = new Dialog()
