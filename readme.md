@@ -12,7 +12,7 @@ If you have copied the .jsx file to the right directory, the script should appea
 
 ## Usage ##
 
-Edit the settings object at the top of the bootstrap.jsx. Default setup creates a document of 1200x1200, with guides that center 978px horizontally and one vertical guide at 100px. Also a couple of layergroups are created, namely HEADER, BODY, FOOTER, and an extra layergroup + layer for the logo.
+Edit the settings object at the top of the bootstrap.jsx to meet your own needs. Default setup creates a document of 1200x1200, with guides that center 978px horizontally and one vertical guide at 100px. Also a couple of layergroups are created, namely HEADER, BODY, FOOTER, and an extra layergroup + layer for the logo.
 
 ```javascript
 var height, margin, settings, width;
@@ -70,23 +70,23 @@ settings = {
     <tr>
         <td>width</td>
         <td>number</td>
-        <td>1200</td>
+        <td>`1200`</td>
     </tr>
     <tr>
         <td>height</td>
         <td>number</td>
-        <td>1200</td>
+        <td>`1200`</td>
     </tr>
     <tr>
         <td>guides</td>
         <td>object</td>
-        <td>{ horizontal: [], vertical: [] }</td>
+        <td>`{ horizontal: [], vertical: [] }`</td>
     </tr>
     <tr>
         <td>guides.horizontal</td>
         <td>array</td>
         <td>
-            [100,200,300]
+            `[100,200,300]`
 
             Calculations, variables are also possible. Numbers will be rounded off.
         </td>
@@ -95,7 +95,7 @@ settings = {
         <td>guides.vertical</td>
         <td>array</td>
         <td>
-            [100,200,300]
+            `[100,200,300]`
 
             Calculations, variables are also possible. Numbers will be rounded off.</td>
     </tr>
@@ -103,7 +103,7 @@ settings = {
         <td>layers</td>
         <td>array containing objects</td>
         <td>
-            [{ name: 'layer 1' }]
+            `[{ name: 'layer 1' }]`
 
             Layers can be nested. If a layer contains another layers array, a layergroup is created. Every layer must be an object. If not, an empty artlayer is created.
         </td>
@@ -111,7 +111,7 @@ settings = {
     <tr>
         <td>layer.name</td>
         <td>string</td>
-        <td>layername</td>
+        <td>`layername`</td>
     </tr>
 </tbody>
 </table>
