@@ -1,12 +1,12 @@
 class Guides
 
   constructor: () ->
-    @setup()
+    @createDocument()
+    app.activeDocument.suspendHistory("Bootstrapping", "this.setup()")
 
 
   # setup guides
   setup: () ->
-    @createDocument()
     @createGuides(settings.guides)
     @createLayers(settings.layers)
 

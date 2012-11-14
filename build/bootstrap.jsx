@@ -75,11 +75,11 @@ var Guides;
 Guides = (function() {
 
   function Guides() {
-    this.setup();
+    this.createDocument();
+    app.activeDocument.suspendHistory("Bootstrapping", "this.setup()");
   }
 
   Guides.prototype.setup = function() {
-    this.createDocument();
     this.createGuides(settings.guides);
     return this.createLayers(settings.layers);
   };
