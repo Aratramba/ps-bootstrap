@@ -132,6 +132,11 @@ settings = {
 </tbody>
 </table>
 
+---
+
+## Known issues ##
+Make sure all content, other than a single word or number, is wrapped in "". You'll get an error saying something like `Delimiter expected after character` if you don't.
+
 
 ---
 
