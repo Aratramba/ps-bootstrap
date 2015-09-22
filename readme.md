@@ -1,3 +1,5 @@
+`tested on Photoshop CS3, CS4 and CS5`
+
 # Photoshop bootstrap ##
 Create your own predefined set of layers, layergroups and guides so you won't have to manually set these up every time you need a new psd.
 
